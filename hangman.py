@@ -1,10 +1,6 @@
 #!/usr/bin/python
 import random
 
-#def remove_replace(index):
-    
-
-
 #a list of words that might be selected as the secret word
 hangman_words = ["hat"] #, "hat", "gift"]
 
