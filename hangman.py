@@ -1,18 +1,18 @@
 #!/usr/bin/python
 import random
-
+lines = open('words.txt').read().splitlines()
 #a list of words that might be selected as the secret word
-hangman_words = ["hat"] #, "hat", "gift"]
+#hangman_words = ["hat"] #, "hat", "gift"]
 
 #work out how many possible words there are
-no_of_words = len(hangman_words)
+#no_of_words = len(hangman_words)
 
 #choose a random number 
-random_word = random.randrange(0, no_of_words)
+#random_word = random.randrange(0, no_of_words)
 
 #select the random secret word
-
-secret_word = str(hangman_words[random_word])
+secret_word = random.choice(lines)
+#secret_word = str(hangman_words[random_word])
 
 secret_word_lst = []
 
